@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .card {
+            width: 200px;
+            height: 260px;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            border: 0.5px solid gainsboro;
+            border-radius: 8px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+
+        .card::after {
+            content: "X";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+        }
+
+        .card::before {
+            content: "9";
+            position: absolute;
+            font-size: 24px;
+            color: white;
+            background-color: red;
+            border-radius: 50%;            
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: -15px;
+            left: 185px;
+        }
+
+        img {
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            margin-top: 16px;
+        }
+
+        
+        h1 {
+            margin: 0px;
+            text-align: center;
+            border-top: 0.5px solid gainsboro;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="./human-man-10.svg" alt="Profile">
+        <h1>A.Rudiger</h1>
+    </div>
+</body>
+</html>
